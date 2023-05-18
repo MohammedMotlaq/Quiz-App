@@ -29,7 +29,7 @@ class QuizDatabase{
   Future<Database> createConnectionWithDatabase()async{
     log("on createConnectionWithDatabase");
     String databasePath = await getDatabasesPath();
-    String databaseName = 'quizDatabase6';
+    String databaseName = 'QuizDatabase';
     String fullPath = join(databasePath,databaseName);
 
     Database database = await openDatabase(fullPath,version: 1,onCreate: (db,i) async{

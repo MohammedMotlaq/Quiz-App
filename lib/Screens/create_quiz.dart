@@ -43,7 +43,52 @@ class _CreateQuizState extends State<CreateQuiz> {
             ),
             centerTitle: true,
           ),
-          body: Column(
+          body:quizProvider.questions.isEmpty
+          ?Center(
+            child: Column(
+              children: [
+                SizedBox(width: MediaQuery.of(context).size.width,),
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 20.h,horizontal: 8.w),
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          padding: EdgeInsets.symmetric(vertical: 10.h),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12.r)
+                          )
+                      ),
+                      onPressed: (){
+                        AppRouter.pushWidget(AddNewQuestion());
+                      },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.add,size: 24.w,color: Colors.white,),
+                          Text(
+                            ' Add New Question',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20.sp
+                            ),
+                          ),
+                        ],
+                      )
+                  ),
+                ),
+                const Spacer(),
+                Image.asset('assets/images/faq.png',width: 250.w,height: 250.w,),
+                Text(
+                  'Add Some Questions to See it Here!',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15.sp
+                  ),
+                ),
+                const Spacer(),
+              ],
+            ),
+          )
+          :Column(
             children: [
               SizedBox(width: MediaQuery.of(context).size.width,),
               Padding(

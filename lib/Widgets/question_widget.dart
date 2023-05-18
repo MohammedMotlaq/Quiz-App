@@ -29,7 +29,7 @@ class _QuestionWidgetState extends State<QuestionWidget> {
               SizedBox(
                 width: 321.w,
                 child: Text(
-                  widget.questionModel.question ?? '',
+                  widget.questionModel.question ,
                   style: TextStyle(
                     fontSize: 20.sp,
                     color: Colors.black
@@ -57,7 +57,7 @@ class _QuestionWidgetState extends State<QuestionWidget> {
               borderRadius: BorderRadius.circular(12.r)
             ),
             child: Text(
-              widget.questionModel.answerOne ?? '',
+              widget.questionModel.answerOne ,
               style: TextStyle(
                 color: widget.questionModel.correctAnswer == 'A' ? Colors.white : Colors.black,
                 fontSize: 20.sp
@@ -73,7 +73,7 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                 borderRadius: BorderRadius.circular(12.r)
             ),
             child: Text(
-              widget.questionModel.answerTwo ?? '',
+              widget.questionModel.answerTwo ,
               style: TextStyle(
                   color: widget.questionModel.correctAnswer == 'B' ? Colors.white : Colors.black,
                   fontSize: 20.sp
@@ -89,7 +89,7 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                 borderRadius: BorderRadius.circular(12.r)
             ),
             child: Text(
-              widget.questionModel.answerThree ?? '',
+              widget.questionModel.answerThree ,
               style: TextStyle(
                   color: widget.questionModel.correctAnswer == 'C' ? Colors.white : Colors.black,
                   fontSize: 20.sp
@@ -105,7 +105,7 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                 borderRadius: BorderRadius.circular(12.r)
             ),
             child: Text(
-              widget.questionModel.answerFour ?? '',
+              widget.questionModel.answerFour ,
               style: TextStyle(
                   color: widget.questionModel.correctAnswer == 'D' ? Colors.white : Colors.black,
                   fontSize: 20.sp

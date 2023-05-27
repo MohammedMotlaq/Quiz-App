@@ -82,6 +82,7 @@ class _AddNewQuestionState extends State<AddNewQuestion> {
                     ),
                     SizedBox(height: 15.h,),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(
                           width: 60.w,
@@ -97,7 +98,7 @@ class _AddNewQuestionState extends State<AddNewQuestion> {
                         ),
                         SizedBox(
                           width: 317.w,
-                          height: 60.h,
+                          // height: 60.h,
                           child: TextFormField(
                             controller: quizProvider.answerOneController,
                             validator: (value){
@@ -134,6 +135,8 @@ class _AddNewQuestionState extends State<AddNewQuestion> {
                     ),
                     SizedBox(height: 15.h,),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+
                       children: [
                         SizedBox(
                           width: 60.w,
@@ -149,7 +152,7 @@ class _AddNewQuestionState extends State<AddNewQuestion> {
                         ),
                         SizedBox(
                           width: 317.w,
-                          height: 60.h,
+                          // height: 60.h,
                           child: TextFormField(
                             controller: quizProvider.answerTwoController,
                             validator: (value){
@@ -186,6 +189,8 @@ class _AddNewQuestionState extends State<AddNewQuestion> {
                     ),
                     SizedBox(height: 15.h,),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+
                       children: [
                         SizedBox(
                           width: 60.w,
@@ -201,7 +206,7 @@ class _AddNewQuestionState extends State<AddNewQuestion> {
                         ),
                         SizedBox(
                           width: 317.w,
-                          height: 60.h,
+                          // height: 60.h,
                           child: TextFormField(
                             controller: quizProvider.answerThreeController,
                             validator: (value){
@@ -238,6 +243,8 @@ class _AddNewQuestionState extends State<AddNewQuestion> {
                     ),
                     SizedBox(height: 15.h,),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+
                       children: [
                         SizedBox(
                           width: 60.w,
@@ -253,7 +260,7 @@ class _AddNewQuestionState extends State<AddNewQuestion> {
                         ),
                         SizedBox(
                           width: 317.w,
-                          height: 60.h,
+                          // height: 60.h,
                           child: TextFormField(
                             controller: quizProvider.answerFourController,
                             validator: (value){
@@ -290,6 +297,8 @@ class _AddNewQuestionState extends State<AddNewQuestion> {
                     ),
                     SizedBox(height: 30.h,),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+
                       children: [
                         Text(
                           'Select The Correct Answer: ',

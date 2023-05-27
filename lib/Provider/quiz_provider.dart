@@ -55,11 +55,11 @@ class QuizProvider extends ChangeNotifier{
           correctAnswer: correctAnswer,
         )
     );
-    questionController.text = '';
-    answerOneController.text = '';
-    answerTwoController.text = '';
-    answerThreeController.text = '';
-    answerFourController.text = '';
+    questionController.clear();
+    answerOneController.clear();
+    answerTwoController.clear();
+    answerThreeController.clear();
+    answerFourController.clear();
     correctAnswer = 'A';
 
     selectAllQuestions();
